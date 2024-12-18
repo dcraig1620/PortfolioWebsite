@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.sidemargins {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1{
+    display: block;
+    text-align: center;
+    font-size: xx-large
+}
+
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+ol {
+    padding: 0; 
+    margin: 0;
+}
+
+nav {
+    background-color: #faa734;
+    padding: 20px 15px;
+    margin: 0;
+    text-align: right;
+}
+
+nav p {
+    float: left;
+    margin: 0;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+nav a:link {
+    color: black;
+    font-weight: 550;
+    background-color: transparent;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+nav a:visited {
+    color: black;
+    background-color: #fcddb1;
+  }
+
+nav a:hover {
+    background-color: #fcddb1;
+    padding: 20px 15px;
+  }
+  
+nav a:active {
+    background-color: #fcddb1;
+  }
+
+#intro{
+    background-color: #faa734;
+    padding: 150px;
+}
+
+#bio, #contactme, #work, #experience{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#personality{
+    background-color: #fcddb1;
+    padding: 30px 4rem;
+}
+
+#resume{
+  background-color: #faa734;  
+  padding: 3rem;
+}
+
+#email, #linkedin {
+    display: inline-block;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+#contactimgs {
+    text-align: center;
+}
+
+#intro img {
+    display: block;
+    max-width: 275px;
+    margin: 20px auto;
+}
