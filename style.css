@@ -52,10 +52,7 @@ nav p {
 
 #intro{
     background-color: #faa734;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding: 20px;
     justify-content: center;
 }
 
@@ -66,13 +63,26 @@ nav p {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-template-rows: repeat(auto-fit, 250px);
-    grid-gap: 50px 50px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 300px);
     grid-auto-flow: row;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 300px;
     margin: 4rem;
     justify-content: center;
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.project_div {
+    text-align: center;
+    margin: auto;
+}
+
+.project_div p {
+    margin: 0px;
 }
 
 #bio, #contactme, #work, #experience{
@@ -109,19 +119,32 @@ nav p {
     display: block;
 }
 
-#projects img {
+.project_div img {
     max-width: 225px;
 }
+
+/* .project_div img:hover {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 5px rgba(250,167,52,.5) inset;
+} */
 
 /* Media Quaries */
 
 @media screen and (min-width: 1000px) { 
 
+    #intro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+
     #projects {
-        grid-template-columns: repeat(3, 250px);
-        grid-template-rows: repeat(3, 250px);
-        margin: 4rem;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(3, 300px);
         justify-content: center;
+        
     }
 
 }
@@ -129,7 +152,7 @@ nav p {
 @media screen and (min-width: 880px) {
 
     #intro {
-        padding: 150px;
+        padding: 100px;
         display: grid;
         grid-template-columns: 400px 300px;
         grid-column-gap: 75px;
@@ -173,10 +196,10 @@ nav p {
     
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (max-width: 630px) {
 
 #intro {
-    padding: 75px;
+    padding: 20px;
 }
 
 }
