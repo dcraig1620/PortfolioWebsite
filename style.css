@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Overall */
+
 *{
     font-family: "Poppins";
     box-sizing: border-box;
@@ -30,6 +32,8 @@ ol {
     margin: 0;
 }
 
+/* Mobile Nav NEED TO ADD HAMBURGER MENU */
+
 nav {
     background-color: #faa734;
     padding: 20px 15px;
@@ -44,32 +48,31 @@ nav p {
     font-size: x-large;
 }
 
-nav a:link {
-    color: black;
-    font-weight: 550;
-    background-color: transparent;
-    text-decoration: none;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-nav a:visited {
-    color: black;
-    background-color: #fcddb1;
-  }
-
-nav a:hover {
-    background-color: #fcddb1;
-    padding: 20px 15px;
-  }
-  
-nav a:active {
-    background-color: #fcddb1;
-  }
+/* Layout */
 
 #intro{
     background-color: #faa734;
-    padding: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    justify-content: center;
+}
+
+#intro p { 
+    max-width: 400px; 
+    margin: auto;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-template-rows: repeat(auto-fit, 250px);
+    grid-gap: 50px 50px;
+    grid-auto-flow: row;
+    grid-auto-rows: 250px;
+    margin: 4rem;
+    justify-content: center;
 }
 
 #bio, #contactme, #work, #experience{
@@ -93,12 +96,87 @@ nav a:active {
     margin: 0px 20px;
 }
 
+/* Images */
+
 #contactimgs {
     text-align: center;
 }
 
 #intro img {
-    display: block;
     max-width: 275px;
-    margin: 20px auto;
+    min-width: none;
+    margin: 40px auto;
+    display: block;
+}
+
+#projects img {
+    max-width: 225px;
+}
+
+/* Media Quaries */
+
+@media screen and (min-width: 1000px) { 
+
+    #projects {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(3, 250px);
+        margin: 4rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 880px) {
+
+    #intro {
+        padding: 150px;
+        display: grid;
+        grid-template-columns: 400px 300px;
+        grid-column-gap: 75px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    /* Nav Bar */
+
+    nav p {
+        float: left;
+        margin: 0;
+        font-weight: 700;
+        font-size: x-large;
+    }
+
+    nav a:link {
+        color: black;
+        font-weight: 550;
+        background-color: transparent;
+        text-decoration: none;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    nav a:visited {
+        color: black;
+        background-color: #fcddb1;
+    }
+
+    nav a:hover {
+        background-color: #fcddb1;
+        padding: 20px 15px;
+    }
+    
+    nav a:active {
+        background-color: #fcddb1;
+    }
+    
+}
+
+@media screen and (min-width: 630px) {
+
+#intro {
+    padding: 75px;
+}
+
 }
