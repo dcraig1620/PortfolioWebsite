@@ -52,7 +52,7 @@ nav p {
 
 #intro{
     background-color: #faa734;
-    padding: 20px;
+    padding: 40px;
     justify-content: center;
 }
 
@@ -123,12 +123,6 @@ nav p {
     max-width: 225px;
 }
 
-/* .project_div img:hover {
-    overflow: hidden;
-    position: relative;
-    box-shadow: 10px 10px 5px rgba(250,167,52,.5) inset;
-} */
-
 /* Media Quaries */
 
 @media screen and (min-width: 1000px) { 
@@ -158,6 +152,52 @@ nav p {
         grid-column-gap: 75px;
     }
 
+    /* Attempt at Hover State w/Overlay */
+
+    .project_div p {
+        display: none;
+    }
+
+    .image_hover {
+        position: relative;
+      }
+      
+      .overlay {
+        background-color: #faa734;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        height: 225px;
+        transition: opacity 0.3s ease;
+      }
+      
+      .image_hover:hover .overlay {
+        opacity: .5;
+      }
+      
+      .overlay_text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      /* Attempt at Hover State w/Background Images */
+        /* #compliance {
+            width: 225px;
+            height: 225px;
+            background-image: url(images/placeholder.png)
+        }
+
+        #compliance:hover {
+            background-color: #faa734;
+            background-blend-mode: multiply;
+        } */
+    
 }
 
 @media screen and (min-width: 700px) {
@@ -194,12 +234,4 @@ nav p {
         background-color: #fcddb1;
     }
     
-}
-
-@media screen and (max-width: 630px) {
-
-#intro {
-    padding: 20px;
-}
-
 }
