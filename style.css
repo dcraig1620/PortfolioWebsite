@@ -21,6 +21,9 @@ h1{
     text-align: center;
     font-size: xx-large
 }
+#work h1 {
+    margin-bottom: 0;
+}
 
 .center {
     text-align: center;
@@ -67,7 +70,7 @@ nav p {
     grid-template-rows: repeat(auto-fit, 300px);
     grid-auto-flow: row;
     grid-auto-rows: 300px;
-    margin: 4rem;
+    margin: 0 4rem 4rem 4rem;
     justify-content: center;
 }
 
@@ -81,13 +84,17 @@ nav p {
     margin: auto;
 }
 
-.project_div p {
+/* .project_div p {
     margin: 0px;
-}
+} */
 
-#bio, #contactme, #work, #experience{
+#bio, #contactme, #experience{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#work {
+    margin-top: 75px;
 }
 
 #personality{
