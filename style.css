@@ -132,7 +132,7 @@ nav p {
 
 /* Media Quaries */
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1025px) { 
 
     #intro {
         padding-top: 40px;
@@ -148,22 +148,12 @@ nav p {
         
     }
 
-}
+ /* Attempt at Hover State w/Overlay */
 
-@media screen and (min-width: 880px) {
-
-    #intro {
-        padding: 100px;
-        display: grid;
-        grid-template-columns: 400px 300px;
-        grid-column-gap: 75px;
-    }
-
-    /* Attempt at Hover State w/Overlay */
-
+    /* MIGHT NEED TO DELETE */
     .project_div p {
         display: none;
-    }
+    } 
 
     .image_hover {
         position: relative;
@@ -204,6 +194,17 @@ nav p {
             background-color: #faa734;
             background-blend-mode: multiply;
         } */
+
+}
+
+@media screen and (min-width: 880px) {
+
+    #intro {
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 400px 300px;
+        grid-column-gap: 75px;
+    }
     
 }
 
