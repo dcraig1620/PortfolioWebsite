@@ -21,8 +21,10 @@ h1{
     text-align: center;
     font-size: xx-large
 }
-#work h1 {
-    margin-bottom: 0;
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .center {
@@ -64,17 +66,17 @@ nav p {
     margin: auto;
 }
 
-#projects {
+#IDprojects, #WEBprojects {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: repeat(auto-fit, 300px);
     grid-auto-flow: row;
     grid-auto-rows: 300px;
-    margin: 0 4rem 4rem 4rem;
+    margin: 0 4rem 2rem 4rem;
     justify-content: center;
 }
 
-#projects a {
+#IDprojects a, #WEBprojects a {
     text-decoration: none;
     color: black;
 }
@@ -84,9 +86,13 @@ nav p {
     margin: auto;
 }
 
-/* .project_div p {
-    margin: 0px;
-} */
+.overlay_text {
+    display: none;
+}
+
+.project_div p {
+    margin: 5px;
+}
 
 #bio, #contactme, #experience{
     margin-top: 50px;
@@ -141,16 +147,16 @@ nav p {
         padding-left: 10vw;
     }
 
-    #projects {
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows: repeat(3, 300px);
-        justify-content: center;
-        
+    #IDprojects {
+        grid-template-columns: repeat(3, 285px);
+        grid-template-rows: repeat(3, 285px);  
     }
 
- /* Attempt at Hover State w/Overlay */
+    #WEBprojects {
+        grid-template-columns: repeat(3, 285px);
+    }
 
-    /* MIGHT NEED TO DELETE */
+ /*Hover State w/Overlay */
     .project_div p {
         display: none;
     } 
@@ -175,6 +181,7 @@ nav p {
       }
       
       .overlay_text {
+        display: block;
         color: white;
         font-size: 20px;
         position: absolute;
@@ -183,18 +190,6 @@ nav p {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
       }
-      /* Attempt at Hover State w/Background Images */
-        /* #compliance {
-            width: 225px;
-            height: 225px;
-            background-image: url(images/placeholder.png)
-        }
-
-        #compliance:hover {
-            background-color: #faa734;
-            background-blend-mode: multiply;
-        } */
-
 }
 
 @media screen and (min-width: 880px) {
@@ -206,6 +201,14 @@ nav p {
         grid-column-gap: 75px;
     }
     
+}
+
+@media screen and (min-width:728px) and (max-width: 1024px) {
+    
+    #WEBprojects {
+        grid-template-columns: repeat(2, 300px);
+    }
+
 }
 
 @media screen and (min-width: 700px) {
