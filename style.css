@@ -71,7 +71,7 @@ nav p {
     margin-top: 0;
 }
 
-#IDprojects, #WEBprojects {
+#IDprojects, #WEBprojects, #PMprojects {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: repeat(auto-fit, 300px);
@@ -81,7 +81,7 @@ nav p {
     justify-content: center;
 }
 
-#IDprojects a, #WEBprojects a {
+#IDprojects a, #WEBprojects a, #PMprojects a {
     text-decoration: none;
     color: black;
 }
@@ -149,11 +149,10 @@ nav p {
     }
 
     #IDprojects {
-        grid-template-columns: repeat(3, 285px);
         grid-template-rows: repeat(3, 285px);  
     }
 
-    #WEBprojects {
+    #IDprojects, #WEBprojects, #PMprojects {
         grid-template-columns: repeat(3, 285px);
     }
 
@@ -206,7 +205,7 @@ nav p {
 
 @media screen and (min-width:728px) and (max-width: 1024px) {
     
-    #WEBprojects {
+    #WEBprojects, #PMprojects {
         grid-template-columns: repeat(2, 300px);
     }
 
