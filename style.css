@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Overall */
+/* Overall effects*/
 
 *{
     font-family: "Poppins";
@@ -11,15 +11,21 @@ body {
     margin: 0;
 }
 
-.sidemargins {
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-
 h1{
+    padding-top: 30px;
+    margin-top: 0;
     display: block;
     text-align: center;
     font-size: xx-large
+    
+}
+
+h3, h4 {
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-weight: 400;
 }
 
 .center {
@@ -30,6 +36,10 @@ h1{
 ol {
     padding: 0; 
     margin: 0;
+}
+
+ol li {
+    margin-top: 25px;
 }
 
 /* Mobile Nav NEED TO ADD HAMBURGER MENU */
@@ -48,8 +58,9 @@ nav p {
     font-size: x-large;
 }
 
-/* Layout */
+/* Layout specifics*/
 
+/* Home page*/
 #intro{
     background-color: #faa734;
     padding: 40px;
@@ -68,7 +79,6 @@ nav p {
 
 #work h1 {
     padding-top: 50px;
-    margin-top: 0;
 }
 
 #IDprojects, #WEBprojects, #PMprojects {
@@ -99,6 +109,13 @@ nav p {
     margin: 5px;
 }
 
+/* About Me page*/
+#biotext, #experience {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 #bio, #contactme, #experience{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -106,25 +123,49 @@ nav p {
 
 #personality{
     background-color: #fcddb1;
-    padding: 30px 4rem;
+    padding: 50px 4rem 75px 4rem;
 }
 
-#resume{
+#personality h1{
+    margin-bottom: 50px;
+}
+
+#personality h4 {
+    font-weight: 400;
+}
+
+#personality p, .no-margin {
+    margin: 0;
+}
+
+#experience h3 {
+    margin-top: 30px;
+}
+
+#experience h1:nth-of-type(3) {
+    margin-top: 16px;
+}
+
+#experience {
+    margin-bottom: 100px;
+}
+
+#resume {
   background-color: #faa734;  
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-#email, #linkedin {
-    display: inline-block;
-    width: 200px;
-    margin: 0px 20px;
+#resumebtn  {
+    width: fit-content;
+    padding: 10px 20px; 
+    background-color: black;
+    font-weight: 600;
+    font-size: large;
+    color: white;
 }
 
 /* Images */
-
-#contactimgs {
-    text-align: center;
-}
 
 #intro img {
     max-width: 275px;
@@ -133,13 +174,44 @@ nav p {
     display: block;
 }
 
-.project_div img {
+.project_div img, #bioimgs img{
     max-width: 225px;
+}
+
+#bioimgs, #personalitytext {
+    margin-top: 30px;
+    display:grid;
+    justify-content: center;
+    grid-template-rows: (4, 225px);
+    gap: 20px;
+}
+
+#bioimgs {
+    grid-template-columns: 225px;
+}
+
+#personalitytext {
+    grid-template-columns: 300px;
+    row-gap: 40px;
+}
+
+#personality img {
+    max-width: 75px;
+}
+
+#email, #linkedin {
+    display: inline-block;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+#contactimgs {
+    text-align: center;
 }
 
 /* Media Quaries */
 
-@media screen and (min-width: 1025px) { 
+@media screen and (min-width: 1121px) { 
 
     #intro {
         padding-top: 40px;
@@ -156,7 +228,7 @@ nav p {
         grid-template-columns: repeat(3, 285px);
     }
 
- /*Hover State w/Overlay */
+    /*project hover states w/overlay */
     .project_div p {
         display: none;
     } 
@@ -190,6 +262,59 @@ nav p {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
       }
+
+    /*About Me page*/
+      #biotext, #experience {
+        max-width: 900px;
+      }
+
+      #bioimgs {
+        grid-template-columns: repeat(4, 225px);
+        column-gap: 30px;
+    }
+
+    #personalitytext {
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 100px;
+    }
+
+    /* Testing different personality layout */
+
+    /* #strengthsfinder {
+        grid-area: strengthsfinder;
+        max-width: 300px;
+    }
+    #strengthsfinder ol {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+        column-gap: 20px;
+    }
+    #pi {
+        grid-area: pi;
+    }
+    #workinggenius {
+        grid-area: workinggenius;
+    }
+    #enneagram {
+        grid-area: enneagram;
+    }
+
+    #personalitytext {
+        display:grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 50px;
+        grid-template-areas: 
+        "strengthsfinder pi"
+        "strengthsfinder workinggenius"
+        "strengthsfinder enneagram"
+        ;
+    } */
+
+    /* ^Testing different personality layout */
+  
 }
 
 @media screen and (min-width: 880px) {
@@ -200,21 +325,38 @@ nav p {
         grid-template-columns: 400px 300px;
         grid-column-gap: 75px;
     }
-    
 }
 
-@media screen and (min-width:728px) and (max-width: 1024px) {
+@media screen and (min-width:728px) and (max-width: 1120px) {
     
     #WEBprojects, #PMprojects {
         grid-template-columns: repeat(2, 300px);
     }
+    
+    /*About Me page*/      
+    #bioimgs {
+        grid-template-columns: repeat(2, 225px);
+        grid-template-rows: (2, 225px);
+        gap: 20px;
+    } 
 
+    #personality h1 {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #personalitytext {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 20px;
+        column-gap: 60px;
+    }
 }
 
 @media screen and (min-width: 700px) {
 
     /* Nav Bar */
-
     nav p {
         float: left;
         margin: 0;
@@ -244,5 +386,4 @@ nav p {
     nav a:active {
         background-color: #fcddb1;
     }
-    
 }
