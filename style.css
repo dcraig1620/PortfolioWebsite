@@ -81,14 +81,23 @@ nav p {
     padding-top: 50px;
 }
 
-#IDprojects, #WEBprojects, #PMprojects {
+#IDprojects, #WEBprojects, #PMprojects, #contactimgs {
     display: grid;
+    justify-content: center;
+}
+
+#IDprojects, #WEBprojects, #PMprojects{
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: repeat(auto-fit, 300px);
     grid-auto-flow: row;
     grid-auto-rows: 300px;
     margin: 0 4rem 2rem 4rem;
-    justify-content: center;
+}
+
+#contactimgs {
+    grid-template-columns: 225px;
+    grid-template-rows: repeat(2, 225px);
+    row-gap: 30px;
 }
 
 #IDprojects a, #WEBprojects a, #PMprojects a {
@@ -146,7 +155,7 @@ nav p {
     margin-top: 16px;
 }
 
-#experience {
+#experience, #contact {
     margin-bottom: 100px;
 }
 
@@ -174,7 +183,7 @@ nav p {
     display: block;
 }
 
-.project_div img, #bioimgs img{
+.project_div img, #bioimgs img, #contactimgs img{
     max-width: 225px;
 }
 
@@ -186,7 +195,7 @@ nav p {
     gap: 20px;
 }
 
-#bioimgs {
+#bioimgs, #contactimgs {
     grid-template-columns: 225px;
 }
 
@@ -197,16 +206,6 @@ nav p {
 
 #personality img {
     max-width: 75px;
-}
-
-#email, #linkedin {
-    display: inline-block;
-    width: 200px;
-    margin: 0px 20px;
-}
-
-#contactimgs {
-    text-align: center;
 }
 
 /* Media Quaries */
@@ -278,43 +277,6 @@ nav p {
         grid-template-rows: repeat(2, auto);
         column-gap: 100px;
     }
-
-    /* Testing different personality layout */
-
-    /* #strengthsfinder {
-        grid-area: strengthsfinder;
-        max-width: 300px;
-    }
-    #strengthsfinder ol {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(5, auto);
-        column-gap: 20px;
-    }
-    #pi {
-        grid-area: pi;
-    }
-    #workinggenius {
-        grid-area: workinggenius;
-    }
-    #enneagram {
-        grid-area: enneagram;
-    }
-
-    #personalitytext {
-        display:grid;
-        grid-template-columns: repeat(2, 400px);
-        grid-template-rows: repeat(3, auto);
-        column-gap: 50px;
-        grid-template-areas: 
-        "strengthsfinder pi"
-        "strengthsfinder workinggenius"
-        "strengthsfinder enneagram"
-        ;
-    } */
-
-    /* ^Testing different personality layout */
-  
 }
 
 @media screen and (min-width: 880px) {
@@ -385,5 +347,12 @@ nav p {
     
     nav a:active {
         background-color: #fcddb1;
+    }
+
+    /* Contact page */
+    #contactimgs {
+        display: grid;
+        grid-template-columns: repeat(2, 225px);
+        column-gap: 30px;
     }
 }
