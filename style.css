@@ -5,6 +5,7 @@
 *{
     font-family: "Poppins";
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -51,6 +52,7 @@ nav {
     text-align: right;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav p {
@@ -58,6 +60,10 @@ nav p {
     margin: 0;
     font-weight: 700;
     font-size: x-large;
+}
+
+#work {
+    scroll-margin-top: 50px;
 }
 
 /* Layout specifics*/
@@ -89,8 +95,7 @@ nav p {
 }
 
 #IDprojects, #WEBprojects, #PMprojects{
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: repeat(auto-fit, 300px);
+    grid-template-columns: 300px;
     grid-auto-flow: row;
     grid-auto-rows: 300px;
     margin: 0 4rem 2rem 4rem;
@@ -102,7 +107,7 @@ nav p {
     row-gap: 30px;
 }
 
-#IDprojects a, #WEBprojects a, #PMprojects a {
+#IDprojects a, #WEBprojects a, #PMprojects a, #resumebtn a {
     text-decoration: none;
     color: black;
 }
@@ -181,11 +186,6 @@ nav p {
 
 #resumebtn:hover {
     background-color: #fcddb1;
-}
-
-#resumebtn a:link {
-    color: black;
-    text-decoration: none;
 }
 
 /* Images */
@@ -304,9 +304,17 @@ nav p {
 }
 
 @media screen and (min-width:728px) and (max-width: 1120px) {
-    
-    #WEBprojects, #PMprojects {
+
+    #IDprojects, #PMprojects, #WEBprojects {
         grid-template-columns: repeat(2, 300px);
+    }
+    
+    #IDprojects, #PMprojects{
+        grid-template-rows: repeat(2, 300px);
+    }
+
+    #WEBprojects {
+        grid-template-rows: 300px;
     }
     
     /*About Me page*/      
