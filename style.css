@@ -49,6 +49,8 @@ nav {
     padding: 20px 15px;
     margin: 0;
     text-align: right;
+    position: sticky;
+    top: 0;
 }
 
 nav p {
@@ -159,19 +161,31 @@ nav p {
     margin-bottom: 100px;
 }
 
-#resume {
+/* #resume {
   background-color: #faa734;  
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
+} */
 
 #resumebtn  {
     width: fit-content;
     padding: 10px 20px; 
-    background-color: black;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #faa734;
     font-weight: 600;
-    font-size: large;
-    color: white;
+    font-size: x-large;
+    color: black;
+}
+
+#resumebtn:hover {
+    background-color: #fcddb1;
+}
+
+#resumebtn a:link {
+    color: black;
+    text-decoration: none;
 }
 
 /* Images */
