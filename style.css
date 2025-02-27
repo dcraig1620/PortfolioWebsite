@@ -42,6 +42,11 @@ ol li {
     margin-top: 25px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Mobile Nav NEED TO ADD HAMBURGER MENU */
 
 nav {
@@ -62,6 +67,7 @@ nav, nav ul {
 
 nav ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 
 nav h2 {
@@ -112,11 +118,6 @@ nav h2 {
     grid-template-columns: 225px;
     grid-template-rows: repeat(2, 225px);
     row-gap: 30px;
-}
-
-#IDprojects a, #WEBprojects a, #PMprojects a, #resumebtn a {
-    text-decoration: none;
-    color: black;
 }
 
 .project_div {
@@ -173,7 +174,7 @@ nav h2 {
     margin-bottom: 100px;
 }
 
-#resumebtn  {
+#resumebtn, .nextbtns, .prevbtns{
     width: fit-content;
     padding: 10px 20px; 
     margin-top: 70px;
@@ -181,12 +182,15 @@ nav h2 {
     margin-right: auto;
     background-color: #faa734;
     font-weight: 600;
-    font-size: x-large;
     color: black;
 }
 
-#resumebtn:hover {
+#resumebtn:hover, .nextbtns:hover, .prevbtns:hover {
     background-color: #fcddb1;
+}
+
+#resumebtn {
+    font-size: x-large;
 }
 
 /* Images */
@@ -223,6 +227,40 @@ nav h2 {
 
 #personality img {
     max-width: 75px;
+}
+
+/* Project pages */
+
+.projectinfo {
+    display: grid;
+    grid-template-columns: 600px auto;
+    column-gap: 50px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.projectinfo p {
+    max-width: 500px;
+}
+
+.projectinfo span {
+    font-weight: 600;
+}
+
+.projectimgs {
+    max-width: 100%;
+}
+
+.nextbtns, .prevbtns  {
+    font-size: medium;
+}
+
+.projectnavbtns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 /* Media Quaries */
