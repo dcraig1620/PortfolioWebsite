@@ -17,8 +17,7 @@ h1{
     margin-top: 0;
     display: block;
     text-align: center;
-    font-size: xx-large
-    
+    font-size: xx-large;  
 }
 
 h3, h4 {
@@ -47,19 +46,27 @@ ol li {
 
 nav {
     background-color: #faa734;
-    padding: 20px 15px;
     margin: 0;
-    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1;  
 }
 
-nav p {
-    float: left;
-    margin: 0;
-    font-weight: 700;
-    font-size: x-large;
+nav, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav h2 {
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
 #work {
@@ -117,12 +124,12 @@ nav p {
     margin: auto;
 }
 
-.overlay_text {
-    display: none;
-}
-
 .project_div p {
     margin: 5px;
+}
+
+.overlay_text {
+    display: none;
 }
 
 /* About Me page*/
@@ -165,12 +172,6 @@ nav p {
 #experience, #contact {
     margin-bottom: 100px;
 }
-
-/* #resume {
-  background-color: #faa734;  
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-} */
 
 #resumebtn  {
     width: fit-content;
@@ -225,6 +226,11 @@ nav p {
 /* Media Quaries */
 
 @media screen and (min-width: 1121px) { 
+
+    nav {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 
     #intro {
         padding-top: 40px;
@@ -293,7 +299,7 @@ nav p {
     }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 900px) {
 
     #intro {
         padding: 100px;
@@ -341,13 +347,7 @@ nav p {
 @media screen and (min-width: 700px) {
 
     /* Nav Bar */
-    nav p {
-        float: left;
-        margin: 0;
-        font-weight: 700;
-        font-size: x-large;
-    }
-
+    
     nav a:link {
         color: black;
         font-weight: 550;
