@@ -7,15 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav>
-            <h2>DANI CRAIG</h2>
-            <ul>
+        <header>
+            <nav>
+                <h2>DANI CRAIG</h2>
+                <ul id="desktopmenu">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html#work">WORK</a></li>
+                    <li><a href="../../about.html">ABOUT</a></li>
+                    <li><a href="../../contact.html">CONTACT</a></li>
+                </ul>
+                <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
+                    <span id="menubtn_open"><img src="images/open_menu.svg"></span>
+                    <span id="menubtn_close"><img src="images/close_menu.svg"></span>
+                </button>
+            </nav>
+            <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
                 <li><a href="../../index.html">HOME</a></li>
                 <li><a href="../../index.html#work">WORK</a></li>
                 <li><a href="../../about.html">ABOUT</a></li>
                 <li><a href="../../contact.html">CONTACT</a></li>
             </ul>
-        </nav>
+        </header>
         <section id="projectinfo">
             <h1>MEET SAM</h1>
             <div class="projecttext">
@@ -35,5 +47,6 @@
             <a href="../ID/sixhats.html" class="nextbtns">SIX HATS &gt;</a>
             <a href="../ID/escaperoom.html" class="prevbtns">&lt; ESCAPE ROOM QUIZ</a>
         </div>
+        <script src="../../js/nav.js"></script>
     </body>
 </html>
