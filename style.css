@@ -124,10 +124,6 @@ nav li:hover, #mobilemenu li:hover {
     transition: background-color 0.3s ease;
 }
 
-.menu-btn:hover {
-    background-color:#fcddb1;
-}
-
 #menubtn_open {
     display: flex;
     padding-inline-start: 0px;

@@ -3,6 +3,8 @@ const menuOpen = document.querySelector('#menubtn_open');
 const menuClose = document.querySelector('#menubtn_close');
 const mobileMenu = document.querySelector('.mobile-menu');
 
+const workSection = document.querySelector('#nav-work');
+
 function toggleMenu() {
     const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
 
@@ -26,3 +28,20 @@ function toggleMenu() {
 menuBtn.addEventListener('click', () => {
     toggleMenu();
 });
+
+function hideMenu() {
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+
+    menuBtn.setAttribute('aria-expanded', !isExpanded);
+
+    mobileMenu.setAttribute('aria-hidden', isExpanded);
+
+    menuClose.style.display = 'none';
+    menuOpen.style.display = 'flex';
+    mobileMenu.classList.remove('open');
+}
+
+workSection.addEventListener('click', () => {
+    hideMenu();
+}
+);
