@@ -488,4 +488,8 @@ nav h2 {
     .prevbtns {
         order: -1;
     }
+
+    #solonextbtn {
+        justify-content: flex-end;
+    }
 }
