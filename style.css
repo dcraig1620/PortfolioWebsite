@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Overall effects*/
+/* Overall effects ----------------------------------------------*/
 
 *{
     font-family: "Poppins";
@@ -47,7 +47,7 @@ a {
     color: black;
 }
 
-/* Mobile Nav NEED TO ADD HAMBURGER MENU */
+/* Nav ----------------------------------------------*/
 
 nav {
     background-color: #faa734;
@@ -79,9 +79,47 @@ nav h2 {
     scroll-margin-top: 50px;
 }
 
-/* Layout specifics*/
+/* Images ----------------------------------------------*/
 
-/* Home page*/
+#intro img {
+    max-width: 275px;
+    min-width: none;
+    margin: 40px auto;
+    display: block;
+    border: 10px solid black;
+}
+
+.project_div img, #bioimgs img, #contactimgs img{
+    max-width: 225px;
+}
+
+.project_div img, #bioimgs img {
+    border: 4px solid black;
+}
+
+#bioimgs, #personalitytext {
+    margin-top: 30px;
+    display:grid;
+    justify-content: center;
+    grid-template-rows: (4, 225px);
+    gap: 20px;
+}
+
+#bioimgs, #contactimgs {
+    grid-template-columns: 225px;
+}
+
+#personalitytext {
+    grid-template-columns: 300px;
+    row-gap: 40px;
+}
+
+#personality img {
+    max-width: 75px;
+}
+
+/* Home page ----------------------------------------------*/
+
 #intro{
     background-color: #faa734;
     padding: 40px;
@@ -92,6 +130,8 @@ nav h2 {
     max-width: 400px; 
     margin: auto;
 }
+
+/* Work page ----------------------------------------------*/
 
 #work h2 {
     text-align: center;
@@ -114,12 +154,6 @@ nav h2 {
     margin: 0 4rem 2rem 4rem;
 }
 
-#contactimgs {
-    grid-template-columns: 225px;
-    grid-template-rows: repeat(2, 225px);
-    row-gap: 30px;
-}
-
 .project_div {
     text-align: center;
     margin: auto;
@@ -133,16 +167,24 @@ nav h2 {
     display: none;
 }
 
-/* About Me page*/
+/* About page ----------------------------------------------*/
+
 #biotext, #experience {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 
-#bio, #contactme, #experience{
+#bio, #contact, #experience, #projectinfo {
     margin-top: 50px;
+}
+
+#bio {
     margin-bottom: 50px;
+}
+
+#experience, #contact {
+    margin-bottom: 100px;
 }
 
 #personality{
@@ -170,16 +212,9 @@ nav h2 {
     margin-top: 16px;
 }
 
-#experience, #contact {
-    margin-bottom: 100px;
-}
-
 #resumebtn, .nextbtns, .prevbtns{
     width: fit-content;
     padding: 10px 20px; 
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #faa734;
     font-weight: 600;
     color: black;
@@ -191,60 +226,31 @@ nav h2 {
 
 #resumebtn {
     font-size: x-large;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Images */
+/* Contact page ----------------------------------------------*/
 
-#intro img {
-    max-width: 275px;
-    min-width: none;
-    margin: 40px auto;
-    display: block;
-    border: 10px solid black;
-}
-
-.project_div img, #bioimgs img, #contactimgs img{
-    max-width: 225px;
-    border: 4px solid black;
-}
-
-#bioimgs, #personalitytext {
-    margin-top: 30px;
-    display:grid;
-    justify-content: center;
-    grid-template-rows: (4, 225px);
-    gap: 20px;
-}
-
-#bioimgs, #contactimgs {
+#contactimgs {
     grid-template-columns: 225px;
+    grid-template-rows: repeat(2, 225px);
+    row-gap: 30px;
 }
 
-#personalitytext {
-    grid-template-columns: 300px;
-    row-gap: 40px;
-}
+/* Project pages ----------------------------------------------*/
 
-#personality img {
-    max-width: 75px;
-}
-
-/* Project pages */
-
-.projectinfo {
+.projecttext {
     display: grid;
-    grid-template-columns: 600px auto;
-    column-gap: 50px;
-    margin-top: 50px;
+    grid-row: 500px auto;
+    row-gap: 20px;
+    margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.projectinfo p {
-    max-width: 500px;
-}
-
-.projectinfo span {
+.projecttext span {
     font-weight: 600;
 }
 
@@ -252,25 +258,57 @@ nav h2 {
     max-width: 100%;
 }
 
+.projectnavbtns {
+    display: grid;
+    grid-row: 25px 25px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
 .nextbtns, .prevbtns  {
     font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.projectnavbtns {
-    display: flex;
-    justify-content: space-between;
+.prevbtns {
+    margin-bottom: 50px;
+}
+
+.nextbtns {
     margin-top: 50px;
-    margin-bottom: 100px;
 }
 
-/* Media Quaries */
+/* MEDIA QUERIES ----------------------------------------------*/
+
+@media screen and (min-width: 1280px) {
+     
+    /* Project pages */
+
+    .projecttext {
+        display: grid;
+        grid-template-columns: 600px auto;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .projecttext p {
+        max-width: 500px;
+    }
+
+}
 
 @media screen and (min-width: 1121px) { 
+
+    /* Nav */
 
     nav {
         padding-left: 150px;
         padding-right: 150px;
     }
+
+    /* Home page */ 
 
     #intro {
         padding-top: 40px;
@@ -278,6 +316,8 @@ nav h2 {
         padding-right: 10vw;
         padding-left: 10vw;
     }
+
+     /* Work page */ 
 
     #IDprojects {
         grid-template-rows: repeat(3, 285px);  
@@ -305,6 +345,7 @@ nav h2 {
         opacity: 0;
         height: 225px;
         transition: opacity 0.3s ease;
+        border: 4px solid black;
       }
       
       .image_hover:hover .overlay {
@@ -323,7 +364,8 @@ nav h2 {
         -ms-transform: translate(-50%, -50%);
       }
 
-    /*About Me page*/
+    /*About page*/
+
       #biotext, #experience {
         max-width: 900px;
       }
@@ -342,6 +384,8 @@ nav h2 {
 
 @media screen and (min-width: 900px) {
 
+    /* Home page */
+
     #intro {
         padding: 100px;
         display: grid;
@@ -351,6 +395,8 @@ nav h2 {
 }
 
 @media screen and (min-width:728px) and (max-width: 1120px) {
+
+    /* Work page */
 
     #IDprojects, #PMprojects, #WEBprojects {
         grid-template-columns: repeat(2, 300px);
@@ -364,7 +410,8 @@ nav h2 {
         grid-template-rows: 300px;
     }
     
-    /*About Me page*/      
+    /*About page*/   
+
     #bioimgs {
         grid-template-columns: repeat(2, 225px);
         grid-template-rows: (2, 225px);
@@ -387,7 +434,7 @@ nav h2 {
 
 @media screen and (min-width: 700px) {
 
-    /* Nav Bar */
+    /* Nav */
     
     nav a:link {
         color: black;
@@ -413,9 +460,32 @@ nav h2 {
     }
 
     /* Contact page */
+    
     #contactimgs {
         display: grid;
         grid-template-columns: repeat(2, 225px);
         column-gap: 30px;
+    }
+    /* Project pages */
+
+    .projecttext p {
+        margin-top: 0;
+    }
+
+    .projectnavbtns {
+        display: flex;
+        justify-content: space-between; 
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+    }
+    .nextbtns, .prevbtns {
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .prevbtns {
+        order: -1;
     }
 }
