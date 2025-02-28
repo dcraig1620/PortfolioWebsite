@@ -56,18 +56,13 @@ nav {
     padding-right: 5%;
     position: sticky;
     top: 0;
-    z-index: 1;  
+    z-index: 5;  
 }
 
-nav, nav ul {
+nav, #desktopmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding-inline-start: 0px;
 }
 
 nav h2 {
@@ -77,6 +72,60 @@ nav h2 {
 
 #work {
     scroll-margin-top: 50px;
+}
+
+nav a:link, #mobilemenu a:link {
+    color: black;
+    font-weight: 550;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+nav li:hover, #mobilemenu li:hover {
+    background-color: #fcddb1;
+    width: 100%;
+}
+
+#desktopmenu, #menubtn_close {
+    display: none;
+}
+
+.mobile-menu {
+    list-style-type: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    padding-inline-start: 0px;
+    text-align: center;
+    background-color: #f8bb66;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+    transform: translateY(0%);
+}
+
+#mobilemenu li {
+    padding: 10px 0;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color:#faa734;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color:#fcddb1;
+}
+
+#menubtn_open {
+    display: flex;
+    padding-inline-start: 0px;
 }
 
 /* Images ----------------------------------------------*/
@@ -458,29 +507,25 @@ nav h2 {
 
 @media screen and (min-width: 700px) {
 
-    /* Nav */
+    /* Nav - Desktop Menu */
     
     nav a:link {
-        color: black;
-        font-weight: 550;
-        background-color: transparent;
-        text-decoration: none;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    
-    nav a:visited {
-        color: black;
-        background-color: #fcddb1;
+        padding: 20px 15px;
     }
 
     nav a:hover {
-        background-color: #fcddb1;
         padding: 20px 15px;
+        background-color: #fcddb1;
     }
     
-    nav a:active {
-        background-color: #fcddb1;
+    #desktopmenu {
+        display: flex;
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+
+    #menubtn, #mobilemenu {
+        display: none;
     }
 
     /* Contact page */
