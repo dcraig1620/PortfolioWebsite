@@ -472,12 +472,12 @@ nav li:hover, #mobilemenu li:hover {
         grid-template-columns: repeat(2, 300px);
     }
     
-    #IDprojects, #PMprojects{
-        grid-template-rows: repeat(2, 340px);
+    #WEBbprojects, #PMprojects{
+        grid-template-rows: repeat(2, 330px);
     }
 
-    #WEBprojects {
-        grid-template-rows: 340px;
+    #IDprojects {
+        grid-template-rows: repeat(4, 330px);
     }
 
     #work h2 {
