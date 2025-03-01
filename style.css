@@ -129,6 +129,35 @@ nav li:hover, #mobilemenu li:hover {
     padding-inline-start: 0px;
 }
 
+/* Footer ----------------------------------------------*/
+
+/* need to fix footer on contact page */
+.container {
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#footerbar {
+    height: 50px;
+    background-color: #faa734;
+    margin-top: -30px;
+}
+
+#paintcan {
+    display: flex;
+    justify-content: end;
+}
+
+#paintcan img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
 /* Images ----------------------------------------------*/
 
 #headshot, #headshothanger, .hanger {
@@ -239,11 +268,11 @@ nav li:hover, #mobilemenu li:hover {
     margin-top: 50px;
 }
 
-#bio {
-    margin-bottom: 100px;
+#experience, #contact {
+    margin-bottom: 50px;
 }
 
-#experience, #contact, #work {
+#bio {
     margin-bottom: 100px;
 }
 
@@ -252,7 +281,7 @@ nav li:hover, #mobilemenu li:hover {
     padding: 50px 4rem 75px 4rem;
 }
 
-#personality h1{
+#personality h1 {
     margin-bottom: 50px;
 }
 
@@ -300,7 +329,7 @@ nav li:hover, #mobilemenu li:hover {
 
 #contactimgs {
     grid-template-columns: 225px;
-    grid-template-rows: repeat(2, 225px);
+    grid-template-rows: 225px;
     row-gap: 30px;
 }
 
@@ -582,7 +611,7 @@ nav li:hover, #mobilemenu li:hover {
     #menubtn, #mobilemenu {
         display: none;
     }
-
+    
     /* Contact page */
     
     #contactimgs {
