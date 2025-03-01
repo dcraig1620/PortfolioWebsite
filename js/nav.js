@@ -3,7 +3,7 @@ const menuOpen = document.querySelector('#menubtn_open');
 const menuClose = document.querySelector('#menubtn_close');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-const workSection = document.querySelector('#nav-work');
+const workSection = document.querySelector('#mobilemenu-work');
 
 function toggleMenu() {
     const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
