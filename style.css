@@ -319,6 +319,15 @@ nav li:hover, #mobilemenu li:hover {
     font-weight: 600;
 }
 
+.projecttext a {
+    font-weight: 600;
+}
+
+.projecttext a:hover {
+    color: #faa734;
+    text-decoration: underline;
+}
+
 .projectimgs {
     max-width: 100%;
 }
