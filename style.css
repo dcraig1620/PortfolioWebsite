@@ -235,7 +235,7 @@ nav li:hover, #mobilemenu li:hover {
     margin-right: auto;
   }
 
-#bio, #contact, #experience, #projectinfo {
+#bio, #contact, #experience {
     margin-top: 50px;
 }
 
@@ -305,6 +305,10 @@ nav li:hover, #mobilemenu li:hover {
 }
 
 /* Project pages ----------------------------------------------*/
+
+#projectinfo {
+    margin-top: 20px;
+}
 
 .projecttext {
     display: grid;
