@@ -398,7 +398,7 @@ nav li:hover, #mobilemenu li:hover {
      
     /* Project pages */
 
-    .projecttext {
+    /* .projecttext {
         grid-template-columns: 600px auto;
         column-gap: 50px;
         margin-top: 50px;
@@ -407,12 +407,19 @@ nav li:hover, #mobilemenu li:hover {
     }
     .projecttext p {
         max-width: 500px;
-    }
+    } */
 
 }
 
 @media screen and (min-width: 1121px) { 
 
+   .projectpagecontent {
+        display: grid;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
     /* Nav */
 
     nav {
