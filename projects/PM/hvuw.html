@@ -7,54 +7,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
-            <nav>
-                <h2>DANI CRAIG</h2>
-                <ul id="desktopmenu">
+        <div class="container">
+            <header>
+                <nav>
+                    <h2>DANI CRAIG</h2>
+                    <ul id="desktopmenu">
+                        <li><a href="../../index.html">HOME</a></li>
+                        <li><a href="../../index.html#work">WORK</a></li>
+                        <li><a href="../../about.html">ABOUT</a></li>
+                        <li><a href="../../contact.html">CONTACT</a></li>
+                    </ul>
+                    <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
+                        <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
+                        <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
+                    </button>
+                </nav>
+                <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
                     <li><a href="../../index.html">HOME</a></li>
-                    <li><a href="../../index.html#work">WORK</a></li>
+                    <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
                     <li><a href="../../about.html">ABOUT</a></li>
                     <li><a href="../../contact.html">CONTACT</a></li>
                 </ul>
-                <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
-                    <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
-                    <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
-                </button>
-            </nav>
-            <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
-                <li><a href="../../index.html">HOME</a></li>
-                <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
-                <li><a href="../../about.html">ABOUT</a></li>
-                <li><a href="../../contact.html">CONTACT</a></li>
-            </ul>
-        </header>
-        <div class="projectpagecontent">
-            <section id="projectinfo">
-                <h1>HOW VU WORKS</h1>
-                <div class="projecttext">
-                    <div>
-                        <img src="../../images/work/PM/hvuw/hvuw2.png" class="projectimgs">
+            </header>
+            <div class="projectpagecontent">
+                <section id="projectinfo">
+                    <h1>HOW VU WORKS</h1>
+                    <div class="projecttext">
+                        <div>
+                            <img src="../../images/work/PM/hvuw/hvuw2.png" class="projectimgs">
+                        </div>
+                        <div>
+                            <p>Text</p>
+                            <p class="no-margin"><span>TYPE:</span> Project Management</p>
+                            <p class="no-margin"><span>DATE:</span> May 2024-Present</p>
+                            <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> Organization</p>
+                            <p class="no-margin"><span>RESULT:</span>Text</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Text</p>
-                        <p class="no-margin"><span>TYPE:</span> Project Management</p>
-                        <p class="no-margin"><span>DATE:</span> May 2024-Present</p>
-                        <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> Organization</p>
-                        <p class="no-margin"><span>RESULT:</span>Text</p>
-                    </div>
+                </section>
+                <div class="projectnavbtns">
+                    <a href="../PM/lxdroles.html" class="nextbtns">LXD ROLES &gt;</a>
+                    <a href="../PM/compliance.html" class="prevbtns">&lt; COMPLIANCE</a>
                 </div>
-            </section>
-            <div class="projectnavbtns">
-                <a href="../PM/lxdroles.html" class="nextbtns">LXD ROLES &gt;</a>
-                <a href="../PM/compliance.html" class="prevbtns">&lt; COMPLIANCE</a>
             </div>
+            <footer>
+                <div id="paintcan">
+                    <img src="../../images/paincan.svg">
+                </div>
+                <div id="footerbar"></div>
+            </footer>
         </div>
-        <footer>
-            <div id="paintcan">
-                <img src="../../images/paincan.svg">
-            </div>
-            <div id="footerbar"></div>
-        </footer>
         <script src="../../js/nav.js"></script>
     </body>
 </html>

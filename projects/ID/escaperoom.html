@@ -7,53 +7,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
-            <nav>
-                <h2>DANI CRAIG</h2>
-                <ul id="desktopmenu">
+        <div class="container">
+            <header>
+                <nav>
+                    <h2>DANI CRAIG</h2>
+                    <ul id="desktopmenu">
+                        <li><a href="../../index.html">HOME</a></li>
+                        <li><a href="../../index.html#work">WORK</a></li>
+                        <li><a href="../../about.html">ABOUT</a></li>
+                        <li><a href="../../contact.html">CONTACT</a></li>
+                    </ul>
+                    <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
+                        <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
+                        <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
+                    </button>
+                </nav>
+                <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
                     <li><a href="../../index.html">HOME</a></li>
-                    <li><a href="../../index.html#work">WORK</a></li>
+                    <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
                     <li><a href="../../about.html">ABOUT</a></li>
                     <li><a href="../../contact.html">CONTACT</a></li>
                 </ul>
-                <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
-                    <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
-                    <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
-                </button>
-            </nav>
-            <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
-                <li><a href="../../index.html">HOME</a></li>
-                <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
-                <li><a href="../../about.html">ABOUT</a></li>
-                <li><a href="../../contact.html">CONTACT</a></li>
-            </ul>
-        </header>
-        <div class="projectpagecontent">
-            <section id="projectinfo">
-                <h1>ESCAPE ROOM QUIZ</h1>
-                <div class="projecttext">
-                    <div>
-                        <img src="../../images/work/ID/escaperoom/escaperoom1.png" class="projectimgs">
+            </header>
+            <div class="projectpagecontent">
+                <section id="projectinfo">
+                    <h1>ESCAPE ROOM QUIZ</h1>
+                    <div class="projecttext">
+                        <div>
+                            <img src="../../images/work/ID/escaperoom/escaperoom1.png" class="projectimgs">
+                        </div>
+                        <div>
+                            <p>My leadership at Veterans United wanted us to present some new, fun alternatives to how we could use Articulate Storyline in our courses. I created this escape room style quiz as a proof of concept.</p>
+                            <p class="no-margin"><span>TYPE:</span> Gamification</p>
+                            <p class="no-margin"><span>DATE:</span> August 2022</p>
+                            <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> Articulate Storyline, Graphic Design, Innovation</p>
+                            <p class="no-margin"><span>RESULT:</span>My leadership was happy with the example.</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>My leadership at Veterans United wanted us to present some new, fun alternatives to how we could use Articulate Storyline in our courses. I created this escape room style quiz as a proof of concept.</p>
-                        <p class="no-margin"><span>TYPE:</span> Gamification</p>
-                        <p class="no-margin"><span>DATE:</span> August 2022</p>
-                        <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> Articulate Storyline, Graphic Design, Innovation</p>
-                        <p class="no-margin"><span>RESULT:</span>My leadership was happy with the example.</p>
-                    </div>
+                </section>
+                <div class="projectnavbtns" id="solonextbtn">
+                    <a href="../ID/sam.html" class="nextbtns">MEET SAM &gt;</a>
                 </div>
-            </section>
-            <div class="projectnavbtns" id="solonextbtn">
-                <a href="../ID/sam.html" class="nextbtns">MEET SAM &gt;</a>
             </div>
+            <footer>
+                <div id="paintcan">
+                    <img src="../../images/paincan.svg">
+                </div>
+                <div id="footerbar"></div>
+            </footer>
+            <script src="../../js/nav.js"></script>
         </div>
-        <footer>
-            <div id="paintcan">
-                <img src="../../images/paincan.svg">
-            </div>
-            <div id="footerbar"></div>
-        </footer>
-        <script src="../../js/nav.js"></script>
     </body>
 </html>

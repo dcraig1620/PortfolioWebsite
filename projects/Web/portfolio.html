@@ -7,54 +7,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header>
-            <nav>
-                <h2>DANI CRAIG</h2>
-                <ul id="desktopmenu">
+        <div class="container"></div>
+            <header>
+                <nav>
+                    <h2>DANI CRAIG</h2>
+                    <ul id="desktopmenu">
+                        <li><a href="../../index.html">HOME</a></li>
+                        <li><a href="../../index.html#work">WORK</a></li>
+                        <li><a href="../../about.html">ABOUT</a></li>
+                        <li><a href="../../contact.html">CONTACT</a></li>
+                    </ul>
+                    <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
+                        <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
+                        <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
+                    </button>
+                </nav>
+                <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
                     <li><a href="../../index.html">HOME</a></li>
-                    <li><a href="../../index.html#work">WORK</a></li>
+                    <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
                     <li><a href="../../about.html">ABOUT</a></li>
                     <li><a href="../../contact.html">CONTACT</a></li>
                 </ul>
-                <button id="menubtn" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobilemenu">
-                    <span id="menubtn_open"><img src="../../images/open_menu.svg"></span>
-                    <span id="menubtn_close"><img src="../../images/close_menu.svg"></span>
-                </button>
-            </nav>
-            <ul id="mobilemenu" class="mobile-menu" aria-hidden="true">
-                <li><a href="../../index.html">HOME</a></li>
-                <li id="mobilemenu-work"><a href="../../index.html#work">WORK</a></li>
-                <li><a href="../../about.html">ABOUT</a></li>
-                <li><a href="../../contact.html">CONTACT</a></li>
-            </ul>
-        </header>
-        <div class="projectpagecontent">
-            <section id="projectinfo">
-                <h1>THIS WEBSITE</h1>
-                <div class="projecttext">
-                    <div>
-                        <img src="../../images/work/Web/portfolio/portfolio1.png" class="projectimgs">
+            </header>
+            <div class="projectpagecontent">
+                <section id="projectinfo">
+                    <h1>THIS WEBSITE</h1>
+                    <div class="projecttext">
+                        <div>
+                            <img src="../../images/work/Web/portfolio/portfolio1.png" class="projectimgs">
+                        </div>
+                        <div>
+                            <p>Check out the files on <a href="https://github.com/dcraig1620/PortfolioWebsite">GitHub</a>.</p>
+                            <p class="no-margin"><span>TYPE:</span> Web Development</p>
+                            <p class="no-margin"><span>DATE:</span> March 2025</p>
+                            <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> HTML, CSS, Javascript, Visual Studio Code, Git</p>
+                            <p class="no-margin"><span>RESULT:</span> You're here!</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Check out the files on <a href="https://github.com/dcraig1620/PortfolioWebsite">GitHub</a>.</p>
-                        <p class="no-margin"><span>TYPE:</span> Web Development</p>
-                        <p class="no-margin"><span>DATE:</span> March 2025</p>
-                        <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> HTML, CSS, Javascript, Visual Studio Code, Git</p>
-                        <p class="no-margin"><span>RESULT:</span> You're here!</p>
-                    </div>
+                </section>
+                <div class="projectnavbtns">
+                    <a href="../Web/kahoot.html" class="nextbtns">CUSTOM "KAHOOT" &gt;</a>
+                    <a href="../PM/lxdroles.html" class="prevbtns">&lt; LXD ROLES</a>
                 </div>
-            </section>
-            <div class="projectnavbtns">
-                <a href="../Web/kahoot.html" class="nextbtns">CUSTOM "KAHOOT" &gt;</a>
-                <a href="../PM/lxdroles.html" class="prevbtns">&lt; LXD ROLES</a>
             </div>
+            <footer>
+                <div id="paintcan">
+                    <img src="../../images/paincan.svg">
+                </div>
+                <div id="footerbar"></div>
+            </footer>
         </div>
-        <footer>
-            <div id="paintcan">
-                <img src="../../images/paincan.svg">
-            </div>
-            <div id="footerbar"></div>
-        </footer>
         <script src="../../js/nav.js"></script>
     </body>
 </html>
