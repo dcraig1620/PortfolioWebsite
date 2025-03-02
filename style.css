@@ -374,11 +374,7 @@ footer {
     margin-top: 0;
 }
 
-.projecttext span {
-    font-weight: 600;
-}
-
-.projecttext a {
+.projecttext span, .projecttext a {
     font-weight: 600;
 }
 
@@ -387,11 +383,7 @@ footer {
     text-decoration: underline;
 }
 
-.projectimgs, .extraimgs {
-    max-width: 100%;
-}
-
-.extraimgs img {
+.projectimgs, .extraimgs, .extraimgs img {
     max-width: 100%;
 }
 
@@ -417,8 +409,16 @@ footer {
     margin-bottom: 50px;
 }
 
+#soloprevbtn {
+    margin-top: 30px;
+}
+
 .nextbtns {
     margin-top: 50px;
+}
+
+#solonextbtn {
+    margin-bottom: 50px;
 }
 
 /* MEDIA QUERIES ----------------------------------------------*/
@@ -652,6 +652,11 @@ footer {
 
     #solonextbtn {
         justify-content: flex-end;
+        margin-bottom: 100px;
+    }
+    
+    #soloprevbtn {
+        margin-top: 0px;
     }
 }
 
