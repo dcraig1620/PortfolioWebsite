@@ -354,6 +354,15 @@ footer {
     height: 0;
 }
 
+#escaperoom {
+    padding-bottom: 31%;
+}
+
+#kahoot {
+    margin:auto;
+    width: 80%;
+}
+
 .video iframe {
     position: absolute;
     top: 0;
