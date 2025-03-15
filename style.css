@@ -534,7 +534,7 @@ footer {
         grid-template-columns: repeat(3, 285px);
     }
 
-    /*project hover states w/overlay */
+    /*Project Thumbnails Overlay */
     .project_div p {
         display: none;
     } 
@@ -551,7 +551,6 @@ footer {
         align-items: center;
         opacity: 0;
         height: 225px;
-        transition: opacity 0.3s ease;
         border: 4px solid black;
       }
       
