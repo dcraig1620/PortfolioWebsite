@@ -33,8 +33,40 @@
                 <section id="projectinfo">
                     <h1>HOW VU WORKS</h1>
                     <div class="projecttext">
-                        <div>
-                            <img src="../../images/work/PM/hvuw/hvuw2.png" class="projectimgs">
+                         <!-- Slideshow container -->
+                         <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="../../images/work/PM/hvuw/hvuw1.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="../../images/work/PM/hvuw/hvuw2.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="../../images/work/PM/hvuw/hvuw3.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="../../images/work/PM/hvuw/hvuw4.png" style="width:100%">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a id="slideshowprev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a id="slideshownext" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
                         </div>
                         <div>
                             <p>A few years before I started at Veterans United, the Learning & Development team created a series of about 20 hand-drawn animated videos explaining how different departments at VU worked. Those videos quickly became outdated and impractical to update. After repeated attempts by other teammates, I worked with graphic designers on our team to successfully revive, combine, restyle, and update these courses with a focus on longevity and increased interactivity.</p>
@@ -58,5 +90,6 @@
             </footer>
         </div>
         <script src="../../js/nav.js"></script>
+        <script src="../../js/slideshow.js"></script>
     </body>
 </html>
