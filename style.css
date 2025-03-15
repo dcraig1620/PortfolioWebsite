@@ -257,6 +257,99 @@ footer {
     display: none;
 }
 
+/* Project pages ----------------------------------------------*/
+
+#projectinfo, .extraimgs {
+    margin-top: 20px;
+}
+
+.projecttext, .projectnavbtns, .video, .extraimgs {
+    display: grid;
+}
+
+.projectnavbtns, .video {
+    justify-content: center;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#escaperoom {
+    padding-bottom: 31%;
+}
+
+.modal {
+    display: none;
+}
+
+.projecttext {
+    grid-row: 500px auto;
+    row-gap: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.projecttext p {
+    margin-top: 0;
+}
+
+.projecttext span, .projecttext a {
+    font-weight: 600;
+}
+
+.projecttext a:hover {
+    color: #faa734;
+    text-decoration: underline;
+}
+
+.projectimgs, .extraimgs, .extraimgs img {
+    max-width: 100%;
+}
+
+.extraimgs {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+    margin-top: 0px;
+}
+
+/* NEXT/PREV Buttons */
+.projectnavbtns {
+    grid-row: 25px 25px;
+    row-gap: 15px;
+}
+
+.nextbtns, .prevbtns  {
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prevbtns, #solonextbtn {
+    margin-bottom: 50px;
+}
+
+#soloprevbtn {
+    margin-top: 30px;
+}
+
+.nextbtns {
+    margin-top: 50px;
+}
+
 /* About page ----------------------------------------------*/
 
 #biotext, #experience {
@@ -327,98 +420,6 @@ footer {
     grid-template-columns: 225px;
     grid-template-rows: 225px;
     row-gap: 30px;
-}
-
-/* Project pages ----------------------------------------------*/
-
-#projectinfo, .extraimgs {
-    margin-top: 20px;
-}
-
-.projecttext, .projectnavbtns, .video, .extraimgs {
-    display: grid;
-}
-
-.projectnavbtns, .video {
-    justify-content: center;
-}
-
-.video {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#escaperoom {
-    padding-bottom: 31%;
-}
-
-.modal {
-    display: none;
-}
-
-.projecttext {
-    grid-row: 500px auto;
-    row-gap: 20px;
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.projecttext p {
-    margin-top: 0;
-}
-
-.projecttext span, .projecttext a {
-    font-weight: 600;
-}
-
-.projecttext a:hover {
-    color: #faa734;
-    text-decoration: underline;
-}
-
-.projectimgs, .extraimgs, .extraimgs img {
-    max-width: 100%;
-}
-
-.extraimgs {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 20px;
-    margin-top: 0px;
-}
-
-.projectnavbtns {
-    grid-row: 25px 25px;
-    row-gap: 15px;
-}
-
-.nextbtns, .prevbtns  {
-    font-size: medium;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.prevbtns, #solonextbtn {
-    margin-bottom: 50px;
-}
-
-#soloprevbtn {
-    margin-top: 30px;
-}
-
-.nextbtns {
-    margin-top: 50px;
 }
 
 /* MEDIA QUERIES ----------------------------------------------*/
