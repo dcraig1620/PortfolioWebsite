@@ -47,6 +47,10 @@ a {
     color: black;
 }
 
+nav, .menu-btn, #intro, #resumebtn, .nextbtns, .prevbtns, #footerbar {
+    background-color: #faa734;
+}
+
 /* Nav ----------------------------------------------*/
 
 header {
@@ -56,7 +60,6 @@ header {
 }
 
 nav {
-    background-color: #faa734;
     margin: 0;
     padding-left: 5%;
     padding-right: 5%;
@@ -120,7 +123,6 @@ nav li:hover, #mobilemenu li:hover {
     background: none;
     border: none;
     cursor: pointer;
-    background-color:#faa734;
     transition: background-color 0.3s ease;
 }
 
@@ -144,7 +146,6 @@ footer {
 
 #footerbar {
     height: 50px;
-    background-color: #faa734;
     margin-top: -30px;
 }
 
@@ -210,7 +211,6 @@ footer {
 /* Home page ----------------------------------------------*/
 
 #intro{
-    background-color: #faa734;
     padding-top: 40px;
     padding-bottom: 100px;
     justify-content: center;
@@ -269,7 +269,7 @@ footer {
     margin-top: 50px;
 }
 
-#experience, #contact {
+#experience, #contact, #personality h1 {
     margin-bottom: 50px;
 }
 
@@ -280,10 +280,6 @@ footer {
 #personality{
     background-color: #fcddb1;
     padding: 50px 4rem 75px 4rem;
-}
-
-#personality h1 {
-    margin-bottom: 50px;
 }
 
 #personality h4 {
@@ -310,7 +306,6 @@ footer {
 #resumebtn, .nextbtns, .prevbtns{
     width: fit-content;
     padding: 10px 20px; 
-    background-color: #faa734;
     font-weight: 600;
     color: black;
 }
@@ -367,6 +362,10 @@ footer {
     height: 100%;
 }
 
+.modal {
+    display: none;
+}
+
 .projecttext {
     grid-row: 500px auto;
     row-gap: 20px;
@@ -410,7 +409,7 @@ footer {
     margin-right: auto;
 }
 
-.prevbtns {
+.prevbtns, #solonextbtn {
     margin-bottom: 50px;
 }
 
@@ -422,28 +421,7 @@ footer {
     margin-top: 50px;
 }
 
-#solonextbtn {
-    margin-bottom: 50px;
-}
-
 /* MEDIA QUERIES ----------------------------------------------*/
-
-/* @media screen and (min-width: 1280px) {
-     
-    Project pages*/
-
-    /* .projecttext {
-        grid-template-columns: 600px auto;
-        column-gap: 50px;
-        margin-top: 50px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .projecttext p {
-        max-width: 500px;
-    }
-
-} */
 
 @media screen and (min-width: 1121px) { 
 
@@ -630,13 +608,40 @@ footer {
         margin-top: 0;
     }
 
+    /* NEXT/PREV Buttons */
+    .projectnavbtns {
+        display: flex;
+        justify-content: space-between; 
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+    }
+    .nextbtns, .prevbtns {
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .prevbtns {
+        order: -1;
+    }
+
+    #solonextbtn {
+        justify-content: flex-end;
+        margin-bottom: 100px;
+    }
+    
+    #soloprevbtn {
+        margin-top: 0px;
+    }
+
      .extraimgs {
         grid-template-columns: repeat(3, auto);
-        column-gap: 20px;
+        column-gap: 15px;
         grid-template-rows: auto;
     }
     
-    /* Extra Images Enlarge */
+    /* Extra Images ENLARGE */
     .extraimgs img:hover {
         cursor: pointer;
     }
@@ -644,14 +649,14 @@ footer {
     /* The Image */
     .extraimgs img {
         max-width: 100%;
-        max-height: 95%;
+        max-height: 100%;
     }
     
     /* The Modal (background) */
     .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
         padding-top: 100px; /* Location of the box */
         left: 0;
         top: 0;
@@ -666,7 +671,10 @@ footer {
     .modal-content {
         margin: auto;
         display: block;
-        max-width: 820px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        min-height: 400px;
     }
     
     /* Add Animation */
@@ -710,33 +718,6 @@ footer {
         content: "";
         display: table;
         clear: both;
-    }
-
-    /* Project page NEXT/PREV Buttons */
-    .projectnavbtns {
-        display: flex;
-        justify-content: space-between; 
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 100px;
-    }
-    .nextbtns, .prevbtns {
-        margin-top: 50px;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .prevbtns {
-        order: -1;
-    }
-
-    #solonextbtn {
-        justify-content: flex-end;
-        margin-bottom: 100px;
-    }
-    
-    #soloprevbtn {
-        margin-top: 0px;
     }
 }
 
