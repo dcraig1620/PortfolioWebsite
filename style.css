@@ -271,7 +271,7 @@ footer {
 
 /* Project pages ----------------------------------------------*/
 
-#projectinfo, .extraimgs {
+#projectinfo {
     margin-top: 20px;
 }
 
@@ -390,6 +390,7 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     margin-top: 0px;
+    pointer-events: none;
 }
 
 /* NEXT/PREV Buttons */
@@ -681,6 +682,7 @@ footer {
         grid-template-columns: repeat(3, auto);
         column-gap: 15px;
         grid-template-rows: auto;
+        pointer-events: all;
     }
     
     /* EXTRA IMAGES - ENLARGE */
