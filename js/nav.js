@@ -1,18 +1,19 @@
+// Mobile menu variables
 const menuBtn = document.querySelector('#menubtn');
 const menuOpen = document.querySelector('#menubtn_open');
 const menuClose = document.querySelector('#menubtn_close');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-const workSection = document.querySelector('#mobilemenu-work');
+// Work section specific variables
+const workSectionLink = document.querySelector('#mobilemenu-work');
 
+// Mobile Menu
 function toggleMenu() {
     const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
 
     menuBtn.setAttribute('aria-expanded', !isExpanded);
 
     mobileMenu.setAttribute('aria-hidden', isExpanded);
-    // console.log(isExpanded);
-    // console.log(!isExpanded);
 
     if (!isExpanded) {
         menuClose.style.display = 'flex';
@@ -41,7 +42,7 @@ function hideMenu() {
     mobileMenu.classList.remove('open');
 }
 
-workSection.addEventListener('click', () => {
+// Close mobile menu when work link is clicked
+workSectionLink.addEventListener('click', () => {
     hideMenu();
-}
-);
+});
