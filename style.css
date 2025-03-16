@@ -36,7 +36,7 @@ a, nav a:link, #mobilemenu a:link {
 }
 
 /* BACKGROUND COLORS */
-nav, .menu-btn, #intro, #resumebtn, .active, .dot:hover, .nextbtns, .prevbtns, #footerbar {
+nav, .menu-btn, #intro, #resumebtn, .dot:hover, .nextbtns, .prevbtns, #footerbar {
     background-color: #faa734;
 }
 
@@ -327,6 +327,10 @@ footer {
   transition: background-color 0.6s ease;
 }
 
+.active {
+    background-color: #faa734;
+  }
+  
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -610,7 +614,7 @@ footer {
     /* Nav - Desktop Menu */
     
     nav a:link, nav a:hover {
-        padding: 20px 15px;
+        padding: 23px 15px;
     }
 
     nav a:hover {
