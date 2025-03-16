@@ -8,47 +8,123 @@
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-}
-
-h1{
+h1 {
     padding-top: 30px;
     margin-top: 0;
-    display: block;
-    text-align: center;
     font-size: xx-large;  
-}
-
-h3, h4 {
-    margin-bottom: 0px;
 }
 
 h4 {
     font-weight: 400;
 }
 
-.center {
-    text-align: center;
-    list-style-position: inside;
-  }
-
 ol {
-    padding: 0; 
-    margin: 0;
+    padding: 0;
 }
 
 ol li {
     margin-top: 25px;
 }
 
-a {
+.center {
+    list-style-position: inside;
+}
+
+a, nav a:link, #mobilemenu a:link {
     text-decoration: none;
     color: black;
 }
 
-nav, .menu-btn, #intro, #resumebtn, .nextbtns, .prevbtns, #footerbar {
+/* BACKGROUND COLORS */
+nav, .menu-btn, #intro, #resumebtn, .active, .dot:hover, .nextbtns, .prevbtns, #footerbar {
     background-color: #faa734;
+}
+
+nav li:hover, #mobilemenu li:hover, #personality, #resumebtn:hover, .nextbtns:hover, .prevbtns:hover {
+    background-color: #fcddb1;
+}
+
+/* GRID */
+#IDprojects, #WEBprojects, #PMprojects, #contactimgs, .projecttext, .projectnavbtns, .video, .extraimgs, #bioimgs, #personalitytext {
+    display: grid;
+}
+
+/* BLOCK */
+h1, #headshot, #headshothanger, .hanger {
+    display: block;
+}
+
+/* FLEX */
+nav, #desktopmenu, .container, #paintcan, #menubtn_open {   
+    display: flex;
+}
+
+/* NONE */
+#desktopmenu, #menubtn_close, .overlay_text, .mySlides, .modal {
+    display: none;
+}
+
+/* JUSTIFY CENTER */
+#intro, #IDprojects, #WEBprojects, #PMprojects, #contactimgs, .projectnavbtns, .video, #bioimgs, #personalitytext {
+    justify-content: center;
+}
+
+/* TEXT-ALIGN CENTER */
+h1, nav, #desktopmenu, .mobile-menu, #work h2, .project_div, .center {
+    text-align: center;
+}
+
+/* ABSOLUTE */
+.mobile-menu, #slideshowprev, #slideshownext, .numbertext, .video iframe {
+    position: absolute;
+}
+
+/* RELATIVE */
+nav, .slideshow-container, .video {
+    position: relative;
+  }
+
+/* CURSOR POINTER */
+.menu-btn, #slideshowprev, #slideshownext, .dot {
+    cursor: pointer;
+}
+
+/* MARGIN AUTO */
+#intro p, .project_div, .slideshow-container {
+    margin: auto;
+}
+
+/* MARGIN LEFT/RIGHT AUTO */
+#headshot, #headshothanger, .hanger, .nextbtns, .prevbtns, #biotext, #experience, #resumebtn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MARGIN ZERO */
+body, ol, nav, #personality p, .no-margin {
+    margin: 0;
+}
+
+/* COMMON MARGINS */
+#headshothanger, #soloprevbtn, #bioimgs, #personalitytext, #experience h3 {
+    margin-top: 30px;
+}
+
+.nextbtns, #bio, #contact, #experience {
+    margin-top: 50px;
+}
+
+h3, h4 {
+    margin-bottom: 0px;
+}
+
+.prevbtns, #solonextbtn, #experience, #contact, #personality h1 {
+    margin-bottom: 50px;
+}
+
+/* WIDTH 100% */
+nav li:hover, #mobilemenu li:hover, .mobile-menu, .video iframe  {
+    width: 100%;
 }
 
 /* Nav ----------------------------------------------*/
@@ -60,17 +136,13 @@ header {
 }
 
 nav {
-    margin: 0;
     padding-left: 5%;
     padding-right: 5%;
-    position: relative;
     z-index: 5;   
 }
 
 nav, #desktopmenu {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 nav h2 {
@@ -83,29 +155,15 @@ nav h2 {
 }
 
 nav a:link, #mobilemenu a:link {
-    color: black;
     font-weight: 550;
     background-color: transparent;
-    text-decoration: none;
-}
-
-nav li:hover, #mobilemenu li:hover {
-    background-color: #fcddb1;
-    width: 100%;
-}
-
-#desktopmenu, #menubtn_close {
-    display: none;
 }
 
 .mobile-menu {
     list-style-type: none;
-    position: absolute;
     top: 45px;
     left: 0;
-    width: 100%;
     padding-inline-start: 0px;
-    text-align: center;
     background-color: #f8bb66;
     transform: translateY(-150%);
     transition: transform 0.3s ease;
@@ -122,21 +180,17 @@ nav li:hover, #mobilemenu li:hover {
 .menu-btn {
     background: none;
     border: none;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #menubtn_open {
-    display: flex;
     padding-inline-start: 0px;
 }
 
 /* Footer ----------------------------------------------*/
 
-/* need to fix footer on contact page */
 .container {
-    min-height: 100vh;    
-    display: flex;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -150,62 +204,16 @@ footer {
 }
 
 #paintcan {
-    display: flex;
     justify-content: end;
 }
 
 #paintcan img {
     width: 40%;
-    max-width: 200px;
     margin-right: 20px;
 }
 
-/* Images ----------------------------------------------*/
-
-#headshot, #headshothanger, .hanger {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#headshot {
-    max-width: 275px;
-    border: 8px solid black;
-    box-shadow: 5px 5px #d78819;
-}
-
-.project_div img, .bioimg, #contactimgs img {
-    max-width: 225px;
-}
-
-.image_hover img, .bioimg, .slideshow-container, iframe, .projectimgs, .extraimgs img{
-    border: 4px solid black;
-    box-shadow: 4px 4px #d8d6d2;
-}
-
-#bioimgs, #personalitytext {
-    margin-top: 30px;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: (4, 225px);
-    gap: 20px;
-}
-
-#bioimgs, #contactimgs {
-    grid-template-columns: 225px;
-}
-
-#headshothanger {
+#paintcan img, #headshothanger {
     max-width: 200px;
-    margin-top: 30px;
-}
-
-.hanger {
-    width: 170px;
-}
-
-#personality img {
-    max-width: 75px;
 }
 
 /* Home page ----------------------------------------------*/
@@ -213,28 +221,27 @@ footer {
 #intro{
     padding-top: 40px;
     padding-bottom: 100px;
-    justify-content: center;
 }
 
 #intro p { 
-    max-width: 400px; 
-    margin: auto;
+    max-width: 400px;
+}
+
+/* HEADSHOT FRAME */
+#headshot {
+    max-width: 275px;
+    border: 8px solid black;
+    box-shadow: 5px 5px #d78819;
 }
 
 /* Work page ----------------------------------------------*/
 
 #work h2 {
-    text-align: center;
     margin-bottom: 10px;
 }
 
 #work h1 {
     padding-top: 50px;
-}
-
-#IDprojects, #WEBprojects, #PMprojects, #contactimgs {
-    display: grid;
-    justify-content: center;
 }
 
 #IDprojects, #WEBprojects, #PMprojects{
@@ -244,17 +251,22 @@ footer {
     margin: 0 4rem 2rem 4rem;
 }
 
-.project_div {
-    text-align: center;
-    margin: auto;
-}
-
 .project_div p {
     margin: 5px;
 }
 
-.overlay_text {
-    display: none;
+.project_div img, .bioimg, #contactimgs img {
+    max-width: 225px;
+}
+
+/* IMAGE FRAMES */
+.image_hover img, .bioimg, .slideshow-container, iframe, .projectimgs, .extraimgs img{
+    border: 4px solid black;
+    box-shadow: 4px 4px #d8d6d2;
+}
+
+.hanger {
+    width: 170px;
 }
 
 /* Project pages ----------------------------------------------*/
@@ -263,30 +275,16 @@ footer {
     margin-top: 20px;
 }
 
-.projecttext, .projectnavbtns, .video, .extraimgs {
-    display: grid;
-}
-
-.projectnavbtns, .video {
-    justify-content: center;
-}
-
 /* SLIDESHOW */
-
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
 }
 
 .mySlides {
-  display: none;
   margin-bottom: -7px;
 }
 
 #slideshowprev, #slideshownext {
-  cursor: pointer;
-  position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -316,12 +314,10 @@ footer {
   border-radius: 0 3px 3px 0;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
   top: 0;
 }
 
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -329,10 +325,6 @@ footer {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #faa734;
 }
 
 /* Fading animation */
@@ -347,17 +339,14 @@ footer {
 
 /* EMBEDS */
 .video {
-    position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
 
 .video iframe {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
 }
 
@@ -365,16 +354,15 @@ footer {
     padding-bottom: 31%;
 }
 
-.modal {
-    display: none;
-}
-
 .projecttext {
     grid-row: 500px auto;
-    row-gap: 20px;
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.projecttext, .extraimgs {
+    row-gap: 20px;
 }
 
 .projecttext p {
@@ -397,7 +385,6 @@ footer {
 .extraimgs {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
-    row-gap: 20px;
     margin-top: 0px;
 }
 
@@ -409,49 +396,29 @@ footer {
 
 .nextbtns, .prevbtns  {
     font-size: medium;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.prevbtns, #solonextbtn {
-    margin-bottom: 50px;
-}
-
-#soloprevbtn {
-    margin-top: 30px;
-}
-
-.nextbtns {
-    margin-top: 50px;
 }
 
 /* About page ----------------------------------------------*/
 
 #biotext, #experience {
     max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-#bio, #contact, #experience {
-    margin-top: 50px;
-}
-
-#experience, #contact, #personality h1 {
-    margin-bottom: 50px;
 }
 
 #bio {
     margin-bottom: 100px;
 }
 
-#personality{
-    background-color: #fcddb1;
-    padding: 50px 4rem 75px 4rem;
+#bioimgs, #personalitytext {
+    grid-template-rows: (4, 225px);
+    gap: 20px;
 }
 
-#personality h4 {
-    font-weight: 400;
+#bioimgs, #contactimgs {
+    grid-template-columns: 225px;
+}
+
+#personality {
+    padding: 50px 4rem 75px 4rem;
 }
 
 #personalitytext {
@@ -459,12 +426,8 @@ footer {
     row-gap: 40px;
 }
 
-#personality p, .no-margin {
-    margin: 0;
-}
-
-#experience h3 {
-    margin-top: 30px;
+#personality img {
+    max-width: 75px;
 }
 
 #experience h1:nth-of-type(3) {
@@ -478,15 +441,9 @@ footer {
     color: black;
 }
 
-#resumebtn:hover, .nextbtns:hover, .prevbtns:hover {
-    background-color: #fcddb1;
-}
-
 #resumebtn {
     font-size: x-large;
     margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Contact page ----------------------------------------------*/
@@ -534,49 +491,51 @@ footer {
         grid-template-columns: repeat(3, 285px);
     }
 
-    /*Project Thumbnails Overlay */
+    /*PROJECT THUMBNAIL OVERLAY*/
     .project_div p {
         display: none;
     } 
 
     .image_hover {
         position: relative;
-      }
-      
-      .overlay {
-        background-color: #faa734;
+    }
+
+    .overlay, .overlay_text {
         position: absolute;
+    }
+      
+    .overlay {
+        background-color: #faa734;
         inset: 0;
         display: flex;
         align-items: center;
         opacity: 0;
         height: 225px;
         border: 4px solid black;
-      }
-      
-      .image_hover:hover .overlay {
+    }
+    
+    .image_hover:hover .overlay {
         opacity: .8;
-      }
-      
-      .overlay_text {
+    }
+    
+    .overlay_text {
         display: block;
         color: black;
         font-size: 20px;
         font-weight: 600;
-        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-      }
+    }
 
     /*About page*/
 
-      #biotext, #experience {
+    #biotext, #experience {
         max-width: 900px;
-      }
+    }
 
-      #bioimgs {
+    #bioimgs {
         grid-template-columns: repeat(4, 225px);
         column-gap: 30px;
     }
@@ -609,7 +568,7 @@ footer {
 
     /* Work page */
 
-    #IDprojects, #PMprojects, #WEBprojects {
+    #IDprojects, #PMprojects, #WEBprojects, #personalitytext {
         grid-template-columns: repeat(2, 300px);
     }
     
@@ -640,7 +599,6 @@ footer {
     }
 
     #personalitytext {
-        grid-template-columns: repeat(2, 300px);
         grid-template-rows: repeat(2, auto);
         row-gap: 20px;
         column-gap: 60px;
@@ -651,22 +609,24 @@ footer {
 
     /* Nav - Desktop Menu */
     
-    nav a:link {
+    nav a:link, nav a:hover {
         padding: 20px 15px;
     }
 
     nav a:hover {
-        padding: 20px 15px;
         background-color: #fcddb1;
     }
     
-    #desktopmenu {
+    #desktopmenu, .projectnavbtns {
         display: flex;
+    }
+
+    #desktopmenu {
         list-style-type: none;
         padding-inline-start: 0px;
     }
 
-    #menubtn, #mobilemenu {
+    #menubtn, #mobilemenu, .modal {
         display: none;
     }
     
@@ -683,27 +643,30 @@ footer {
         margin-top: 0;
     }
 
-    /* NEXT/PREV Buttons */
+    /* PROJECT NEXT/PREV BUTTONS */
+    .projectnavbtns, #solonextbtn {
+        margin-bottom: 100px;
+    }
+
     .projectnavbtns {
-        display: flex;
         justify-content: space-between; 
         margin-left: 10%;
         margin-right: 10%;
-        margin-bottom: 100px;
     }
+
     .nextbtns, .prevbtns {
         margin-top: 50px;
         margin-bottom: 0;
         margin-left: 0;
         margin-right: 0;
     }
+
     .prevbtns {
         order: -1;
     }
 
     #solonextbtn {
         justify-content: flex-end;
-        margin-bottom: 100px;
     }
     
     #soloprevbtn {
@@ -716,8 +679,9 @@ footer {
         grid-template-rows: auto;
     }
     
-    /* Extra Images ENLARGE */
-    .extraimgs img:hover {
+    /* EXTRA IMAGES - ENLARGE */
+    .extraimgs img:hover, .close:hover,
+    .close:focus {
         cursor: pointer;
     }
     
@@ -729,7 +693,6 @@ footer {
     
     /* The Modal (background) */
     .modal {
-        display: none; 
         position: fixed; 
         z-index: 1; 
         padding-top: 100px; /* Location of the box */
@@ -785,7 +748,6 @@ footer {
     .close:focus {
         color: #bbb;
         text-decoration: none;
-        cursor: pointer;
     }
     
     /* Clear Floats */
