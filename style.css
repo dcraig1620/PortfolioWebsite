@@ -79,7 +79,7 @@ nav, #desktopmenu, .container, #paintcan, #menubtn_open {
 }
 
 /* TEXT-ALIGN CENTER */
-h1, nav, #desktopmenu, .mobile-menu, #work h2, .project_div, .center {
+h1, nav, #desktopmenu, .mobile-menu, #work h2, .project_div, .center, #slideshowdots {
     text-align: center;
 }
 
