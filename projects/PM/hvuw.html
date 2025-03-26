@@ -61,16 +61,17 @@
                             </div>
                         
                             <!-- Next and previous buttons -->
-                            <button id="slideshowprev" onclick="plusSlides(-1)">&#10094;</button>
-                            <button id="slideshownext" onclick="plusSlides(1)">&#10095;</button>
+                            <button id="slideshowprev" aria-label="Previous Button" onclick="plusSlides(-1)">&#10094;</button>
+                            <button id="slideshownext" aria-label="Next Button" onclick="plusSlides(1)">&#10095;</button>
                         </div>
                         
                         <!-- The dots/circles -->
-                        <div style="text-align:center">
-                            <button class="dot" onclick="currentSlide(1)"></button>
-                            <button class="dot" onclick="currentSlide(2)"></button>
-                            <button class="dot" onclick="currentSlide(3)"></button>
-                            <button class="dot" onclick="currentSlide(4)"></button>
+                        <div id="slideshowdots">
+                            <button class="dot" aria-label="View Image One" onclick="currentSlide(1)"></button>
+                            <button class="dot" aria-label="View Image Two"  onclick="currentSlide(2)"></button>
+                            <button class="dot"  aria-label="View Image Three" onclick="currentSlide(3)"></button>
+                            <button class="dot" 
+                            aria-label="View Image Four"  onclick="currentSlide(4)"></button>
                         </div>
 
                         <div>
