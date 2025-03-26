@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+:focus {
+    outline-color: rgb(163, 43, 255);
+}
+
 h1 {
     padding-top: 30px;
     margin-top: 0;
@@ -33,6 +37,10 @@ ol li {
 a, nav a:link, #mobilemenu a:link {
     text-decoration: none;
     color: black;
+}
+
+button {
+    border: none;
 }
 
 /* BACKGROUND COLORS */
