@@ -35,6 +35,7 @@ a, nav a:link, #mobilemenu a:link {
     color: black;
 }
 
+
 /* BACKGROUND COLORS */
 nav, .menu-btn, #intro, #resumebtn, .dot:hover, .nextbtns, .prevbtns, #footerbar {
     background-color: #faa734;
@@ -85,7 +86,7 @@ nav, .slideshow-container, .video {
   }
 
 /* CURSOR POINTER */
-.menu-btn, #slideshowprev, #slideshownext, .dot {
+button, .menu-btn, #slideshowprev, #slideshownext, .dot {
     cursor: pointer;
 }
 
@@ -631,14 +632,15 @@ footer {
     #menubtn, #mobilemenu, .modal {
         display: none;
     }
-    
+
     /* Contact page */
     
-    #contactimgs {
+   #contactimgs {
         display: grid;
-        grid-template-columns: repeat(2, 225px);
         column-gap: 30px;
+        grid-template-columns: repeat(2, 225px);
     }
+
     /* Project pages */
 
     .projecttext p {
