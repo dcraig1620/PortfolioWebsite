@@ -9,7 +9,7 @@
 }
 
 :focus {
-    outline-color: rgb(163, 43, 255);
+    outline-color: #77129b;
 }
 
 h1, h2 {
@@ -58,7 +58,7 @@ nav li:hover, #mobilemenu li:hover, #personality, #resumebtn:hover, .nextbtns:ho
 }
 
 /* GRID */
-#IDprojects, #WEBprojects, #PMprojects, #contactimgs, .projecttext, .projectnavbtns, .video, .extraimgs, #bioimgs, #personalitytext {
+#IDprojects, #WEBprojects, #PMprojects, #contactimgs, .projecttext, .projectnavbtns, .video, .extraimgs, #bioimgs, #personalitytext, #certs {
     display: grid;
 }
 
@@ -460,6 +460,10 @@ footer {
     margin-top: 16px;
 }
 
+#certstitle {
+    margin-block-start: 0em;
+}
+
 #resumebtn, .nextbtns, .prevbtns{
     width: fit-content;
     padding: 10px 20px; 
@@ -563,6 +567,11 @@ footer {
         grid-template-columns: repeat(2, 450px);
         grid-template-rows: repeat(2, auto);
         column-gap: 100px;
+    }
+
+    #certs {
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(2, auto);
     }
 }
 
