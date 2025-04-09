@@ -150,8 +150,7 @@ header {
 
 nav {
     padding-left: 5%;
-    padding-right: 5%;
-    z-index: 5;   
+    padding-right: 5%;   
 }
 
 nav, #desktopmenu {
@@ -180,6 +179,7 @@ nav a:link, #mobilemenu a:link {
     left: 0;
     padding-inline-start: 0px;
     background-color: #f8bb66;
+    z-index: -1;
     transform: translateY(-150%);
     transition: transform 0.3s ease;
 }
