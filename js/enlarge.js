@@ -5,7 +5,7 @@ let modal = document.getElementById('myModal');
 let closeButton = document.getElementsByClassName("close")[0];
 
 // Get all images
-let images = document.getElementsByTagName('img');
+let imageButtons = document.querySelectorAll('.extraimgbutton');
 let modalImg = document.getElementById("img01");
 let i;
 
@@ -14,11 +14,11 @@ closeButton.onclick = function() {
   modal.style.display = "none";
 }
 
-// Insert the clicked image inside the modal
-for (i = 0; i < images.length; i++) {
-  images[i].onclick = function(){
+imageButtons.forEach((button) => {
+  button.addEventListener('click', function() {
     modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-  }
-}
+    const img = button.querySelector('img');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+  });
+});
