@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+:focus {
+    outline-color: #77129b;
+}
+
 body {
     margin: 0;
 }
@@ -254,6 +258,7 @@ footer {
 
 .projectpagecontent {
     max-width: 1200px;
+    margin: auto;
 }
 
 #projectinfo, .extraimgs {
