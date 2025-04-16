@@ -38,11 +38,42 @@
                 <section id="projectinfo">
                     <h1>THIS WEBSITE</h1>
                     <div class="projecttext">
-                        <div>
-                            <img src="../../images/work/Web/portfolio/portfolio1.png" alt="Screenshot of home page in Visual Studio Code." class="projectimgs">
+                        <!--SLIDESHOW-->
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="../../images/work/Web/portfolio/portfolio1.png" alt="Screenshot of home page in Visual Studio Code." style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="../../images/work/Web/portfolio/portfolio2.png" alt="Screenshot of three phase Website Project Plan including resources and feedback." style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="../../images/work/Web/portfolio/portfolio3.png" alt="Screenshot of phase three redesign Figma prototype." style="width:100%">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <button id="slideshowprev" aria-label="Previous Button" onclick="plusSlides(-1)">&#10094;</button>
+                            <button id="slideshownext" aria-label="Next Button" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                        
+                        <!-- The dots/circles -->
+                        <div id="slideshowdots">
+                            <button class="dot" aria-label="View Image One" onclick="currentSlide(1)"></button>
+                            <button class="dot" aria-label="View Image Two"  onclick="currentSlide(2)"></button>
+                            <button class="dot"  aria-label="View Image Three" onclick="currentSlide(3)"></button>
                         </div>
                         <div>
-                            <p>After completing <a href="https://teamtreehouse.com/profiles/danicraig" class="textlink" aria-label="Opens in a new tab">Treehouse's</a> Front End Web Development Track, including 54 hours of HTML, CSS, and JavaScript courses, I decided to put my new skills to the test and make a website from scratch. Check out the files on <a href="https://github.com/dcraig1620/PortfolioWebsite" class="textlink" aria-label="Opens in a new tab">GitHub</a>.</p>
+                            <p>After completing <a href="https://teamtreehouse.com/profiles/danicraig" class="textlink" aria-label="Opens in a new tab">Treehouse's</a> Front End Web Development Track, including 54 hours of HTML, CSS, and JavaScript courses, I decided to put my new skills to the test and make a new version of my portfolio website from scratch. I started by creating a project plan with three main phases:</p>
+                            <ul>
+                                <li><span>Phase 1: </span>Create a minimum viable product that is a direct copy of my previous weebly site</li>
+                                <li><span>Phase 2: </span>Get and implement feedback from Veterans United's UX/UI Director</li>
+                                <li><span>Phase 3: </span>Use Figma to create a redesigned prototype, then bring that to life </li>
+                            </ul>
+                            <p>I am currently at the beginning of Phase 3. Check out the files on <a href="https://github.com/dcraig1620/PortfolioWebsite" class="textlink" aria-label="Opens in a new tab">GitHub</a>.</p>
                             <p class="no-margin"><span>TYPE:</span> Web Development</p>
                             <p class="no-margin"><span>DATE:</span> March 2025-Present</p>
                             <p class="no-margin"><span>PROJECT ATTRIBUTES:</span> HTML, CSS, Javascript, Visual Studio Code, Git, Figma, AWS</p>
@@ -66,5 +97,6 @@
         </div>
         
         <script src="../../js/nav.js"></script>
+        <script src="../../js/slideshow.js"></script>
     </body>
 </html>
