@@ -198,14 +198,11 @@ footer {
     box-shadow: 5px 5px #d78819;
 }
 
-#headshot, #headshothanger, .hanger {
+#headshot {
     display: block;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#headshothanger {
-    margin-top: 40px;
 }
 
 /* Work page ----------------------------------------------*/
@@ -252,10 +249,6 @@ footer {
 .image_hover img, .bioimg, .slideshow-container, iframe, .projectimgs, .extraimgs img{
     border: 4px solid black;
     box-shadow: 4px 4px #d8d6d2;
-}
-
-.hanger {
-    width: 170px;
 }
 
 /* Project pages ----------------------------------------------*/
@@ -638,8 +631,8 @@ footer {
         grid-column-gap: 75px;
     }
 
-    #headshothanger {
-        margin-top: 0;
+    #headshot {
+        margin-top: 0px;
     }
 
     #certs {
