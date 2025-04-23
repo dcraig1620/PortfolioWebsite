@@ -240,6 +240,13 @@ footer {
     margin: 0 4rem 2rem 4rem;
 }
 
+#coding {
+    background-color: #fcddb1;
+    padding-top: 30px;
+    padding-bottom: 10px; 
+    margin-bottom: 50px;
+}
+
 .project_div {
     text-align: center;
     margin: auto;
@@ -261,6 +268,10 @@ footer {
 .image_hover img, .bioimg, .slideshow-container, iframe, .projectimgs, .extraimgs img{
     border: 4px solid black;
     box-shadow: 4px 4px #d8d6d2;
+}
+
+#coding img {
+    box-shadow: 4px 4px #ffc26c;
 }
 
 /* Project pages ----------------------------------------------*/
@@ -580,6 +591,10 @@ footer {
 
     #IDprojects, #WEBprojects, #PMprojects {
         grid-template-columns: repeat(3, 285px);
+    }
+
+   #WEBprojects {
+        grid-template-columns: repeat(2, 285px);
     }
 
     /*PROJECT THUMBNAIL OVERLAY*/
