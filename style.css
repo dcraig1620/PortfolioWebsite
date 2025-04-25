@@ -188,7 +188,9 @@ footer {
  #intro-text {
     text-align: left;
     max-width: 60vw; 
-    margin-right: 16%;
+    margin-right: 15%;
+    margin-left: 10px;
+    max-height: 93vh;
  } 
 
  #hi {
@@ -201,13 +203,13 @@ footer {
 #intro p { 
     font-size: 2vw;
     text-align: left;
-    margin-top: 0px;
+    margin-top: -10px;
 }
 
 #headshot-container {
     display: flex;
     margin-top: 0px;
-    margin-left: 12%;
+    margin-left: 10%
 }
 
 #headshot {
@@ -560,6 +562,23 @@ footer {
 
 /* MEDIA QUERIES ----------------------------------------------*/
 
+
+@media screen and (min-width: 1500px) { 
+
+    #headshot {
+        max-width: 594.75px;
+    }
+
+    #headshot-container {
+        margin-left: 22%; 
+    }
+
+    #intro-text {
+        margin-left: -5%; 
+    }
+
+}
+
 @media screen and (min-width: 1121px) { 
    
     /* Nav */
@@ -567,20 +586,6 @@ footer {
     nav {
         padding-left: 120px;
         padding-right: 120px;
-    }
-
-    /* Home Page */
-
-    #intro-section {
-        padding-left: 12%; 
-    }
-
-    #intro {
-        padding-top: 0px;
-    }
-
-    #intro-text {
-        margin-top: 30px; 
     }
 
     /* Work page */ 
@@ -656,13 +661,17 @@ footer {
 @media screen and (min-width: 900px) {
 
     /* Home page */
-    
-    #intro-text {
-        margin-right: auto; 
+
+    #intro-section {
+        padding-left: 12%; 
     }
 
-    #headshot-container {
-        margin-left: 20%;
+    #intro {
+        padding-top: 0px;
+    }
+
+    #intro-text {
+        margin-top: 30px; 
     }
 
     /* About page */ 
@@ -684,7 +693,7 @@ footer {
     /* Home page */
 
     #intro p {
-       font-size: 16px;
+       font-size: 15px;
     }
 
 }
